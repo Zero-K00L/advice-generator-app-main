@@ -1,0 +1,100 @@
+/* Color Variables */
+
+:root {
+    --lightCyan: hsl(193, 38%, 86%);
+    --neonGreen: hsl(150, 100%, 66%);
+    --grayishBlue: hsl(217, 19%, 38%);
+    --darkGrayishBlue: hsl(217, 19%, 24%);
+    --darkBlue: hsl(218, 23%, 16%);
+}
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--darkBlue);
+}
+
+.main {
+    width: 100%;
+    max-width: 343px;
+    height: 315px;
+    background-color: var(--darkGrayishBlue);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 10px;
+    font-family: 'Manrope', sans-serif;
+}
+
+#advice-ID {
+    margin-top: 40px;
+    margin-bottom: 25px;
+    color: var(--neonGreen);
+    font-size: 10.5px;
+    letter-spacing: 4px;
+    position: relative;
+    left: -1px;
+    top: 2px;
+}
+
+.divider {
+/*     position: absolute;
+    top: 75%;
+    left: 7%; */
+}
+
+.icon-container {
+    display: inline-block;
+    width: 100%;
+    max-width: 64px;
+    height: 64px;
+    background-color: var(--neonGreen);
+    position: absolute;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 90%;
+    left: 41%;
+}
+
+.dice-icon {
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    
+}
+
+.icon-container:hover {
+    box-shadow: 0px 0px 22px 3px var(--neonGreen);
+}
+
+#advice-text {
+    color: var(--lightCyan);
+    font-size: 23.5px;
+    margin: 0px 19px 24px 19px;
+    line-height: 1.4;
+}
+
+.fade-out {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+}
+
+.fade-out.hide {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
