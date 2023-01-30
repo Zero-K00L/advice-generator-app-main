@@ -47,11 +47,6 @@ body {
     top: 2px;
 }
 
-.divider {
-/*     position: absolute;
-    top: 75%;
-    left: 7%; */
-}
 
 .icon-container {
     display: inline-block;
@@ -60,15 +55,15 @@ body {
     height: 64px;
     background-color: var(--neonGreen);
     position: absolute;
-    border-radius: 50%;
-    cursor: pointer;
     top: 90%;
     left: 41%;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 .dice-icon {
     position: absolute;
-    top: 49%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     cursor: pointer;
@@ -80,21 +75,73 @@ body {
 }
 
 #advice-text {
+    margin: 0px 19px 24px 19px;
     color: var(--lightCyan);
     font-size: 23.5px;
-    margin: 0px 19px 24px 19px;
     line-height: 1.4;
 }
 
-.fade-out {
+/* .fade-out {
     opacity: 1;
-    transition: opacity 0.5s ease-in;
+    transition: opacity 1000ms ease-in;
 }
 
 .fade-out.hide {
     opacity: 0;
-    transition: opacity 0.5s ease-out;
+    transition: opacity 1000ms ease-out;
 }
-
+ */
 /* .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); } */
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .main {
+        max-width: 540px;
+        height: 332px;
+        border-radius: 15px;
+    }
+
+    #advice-ID {
+        margin-top: 40px;
+        margin-bottom: 32px;
+        color: var(--neonGreen);
+        font-size: 13px;
+        letter-spacing: 4px;
+        position: relative;
+        left: 2px;
+        top: 8px;
+    }
+
+    #advice-text {
+        display: inline-block;
+        width: 84%;
+        margin: 0px 19px 24px 19px;
+        color: var(--lightCyan);
+        font-size: 27px;
+        line-height: 1.4;
+        letter-spacing: 0.15px;
+    }
+
+    .icon-container {
+        display: inline-block;
+        width: 100%;
+        max-width: 64px;
+        height: 64px;
+        background-color: var(--neonGreen);
+        position: absolute;
+        border-radius: 50%;
+        cursor: pointer;
+        top: 90.3%;
+        left: 44.3%;
+    }
+
+    .dice-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+    }
+} 

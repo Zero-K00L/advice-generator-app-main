@@ -16,8 +16,31 @@ document.getElementById("generate-advice-button").addEventListener("click", func
 
 
 
-
-
+/* document.getElementById("generate-advice-button").addEventListener("click", function(){
+    // Get the current advice element
+    var currentAdvice = document.getElementById("advice-text");
+    var currentAdviceId = document.getElementById("advice-ID");
+    
+    // Add the fade-out class to the current advice element
+    currentAdvice.classList.add("fade-out");
+    currentAdviceId.classList.add("fade-out");
+  
+    // Fetch the new advice
+    fetch("https://api.adviceslip.com/advice/random")
+      .then(response => response.json())
+      .then(data => {
+        // Update the advice text and id
+        currentAdvice.innerHTML = data.slip.advice;
+        currentAdviceId.innerHTML = data.slip.slip_id;
+  
+        // Wait for the fade-out animation to finish before removing the class
+        setTimeout(() => {
+          currentAdvice.classList.remove("fade-out");
+          currentAdviceId.classList.remove("fade-out");
+        }, 1000);
+      });
+  });
+ */
 
 
 
