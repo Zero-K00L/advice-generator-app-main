@@ -2,7 +2,7 @@ let adviceId;
 
 document.getElementById("generate-advice-button").addEventListener("click", function(){
     //generate random advice id
-    adviceId = Math.floor(Math.random() * (100 - 1 + 1)) + 1;
+    adviceId = Math.floor(Math.random() * (215 - 1 + 1)) + 1;
 
     //fetch advice from api
     fetch("https://api.adviceslip.com/advice/" + adviceId)

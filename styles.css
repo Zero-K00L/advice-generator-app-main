@@ -77,11 +77,13 @@ body {
     color: var(--lightCyan);
     font-size: 23.5px;
     line-height: 1.4;
+    width: 86%;
+    display: inline-block;
 }
 
-/* .attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); } */
-
+.divider-desktop {
+    display: none;
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
@@ -105,7 +107,7 @@ body {
     #advice-text {
         display: inline-block;
         width: 84%;
-        margin: 0px 19px 24px 19px;
+        margin: 0px 19px 39px 19px;
         color: var(--lightCyan);
         font-size: 27px;
         line-height: 1.4;
@@ -131,5 +133,13 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
         cursor: pointer;
+    }
+
+    .divider-desktop {
+        display: inline-block;
+    }
+
+    .divider-mobile {
+        display: none;
     }
 } 
